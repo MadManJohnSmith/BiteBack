@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+:root {
+	--primary-color: #000000;
+	--primary-color-light: #20242f;
+	--secondary-color: #f49e09;
+	--extra-light: #ffffff80;
+	--white: #ffffff;
+	--max-width: 1200px;
+	--header-font: "Lisu Bosa", serif;
+	--panel-header-bg: #3a3f51;
+	--panel-body-bg: #ffffff;
+	--button-bg: #5d9cec;
+	--button-hover: #4b91ea;
+	--button-shadow: #66afe999;
+	--font-family-default: "Poppins", sans-serif;
+	--font-family-logo: "Press Start 2P", system-ui;
+}
+.logo {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: var(--white);
+	font-family: var(--font-family-logo);
+	font-style: normal;
+}
+.nav_bar {
+	display: flex;
+	justify-content: space-between;
+	max-width: var(--max-width);
+	margin: auto;
+	padding: 1.2rem 1rem;
+	align-items: center;
+	gap: 2rem;
+}
+.nav_links {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	gap: 2rem;
+	font-size: 1rem;
+}
+.link a {
+	padding: 1.3rem 5px;
+	font-weight: 500;
+	color: var(--white);
+	transition: 0.3s;
+}
+.link a:hover {
+	color: var(--secondary-color);
+	border-bottom: 2px solid var(--secondary-color);
+}
+.link.current a{
+	color: var(--secondary-color);
+	border-bottom: 2px solid var(--secondary-color);
+}
+.link span {
+	padding: 1rem 0;
+	color: var(--white);
+	cursor: pointer;
+}
+#sesionbutton {
+	font-size: 14px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+nav {
+	display: block;
+	unicode-bidi: isolate;
+	background-color: var(--primary-color);
+	border-bottom: 1px solid var(--extra-light);
+	position: relative;
+	z-index: 1000;
+}
+body {
+	font-family: var(--font-family-default);
+	color: var(--white);
+	background-color: var(--primary-color);
+}
+footer .section_container {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.footer_container {
+	text-align: center;
+}
+.footer_container h4 {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.footer_container p {
+	max-width: 600px;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+.footer_bar {
+	padding: 1rem;
+	text-align: center;
+	font-size: 0.8rem;
+	border-top: 1px solid var(--extra-light);
+}
+.section_container {
+	max-width: var(--max-width);
+	margin: 0 auto 1.5rem;
+	padding: 2rem 1rem;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+.content {
+	flex: 0 0 20.3rem;
+}
+.panel_header {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 1.25rem;
+	background-color: var(--panel-header-bg);
+}
+.panel_body {
+	padding: 20px;
+	border-bottom-right-radius: 1.25rem;
+	border-bottom-left-radius: 0.25rem;
+	background-color: var(--white);
+}
+.input_box {
+	margin: 20px 0;
+}
+.form_input {
+	padding: 6px 16px;
+	width: 100%;
+	height: 2.2rem;
+	border: 1px solid #dde6e9;
+	border-radius: 0.25rem;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.form_input:focus {
+	outline: 0;
+	border-color: var(--button-hover);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+		0 0 8px var(--button-shadow);
+}
+.button {
+	overflow: hidden;
+	margin-top: 20px;
+	padding: 10px 0;
+	width: 100%;
+	border: 1px solid var(--button-hover);
+	border-radius: 4px;
+	background-color: var(--button-bg);
+	color: var(--white);
+}
+.button:hover {
+	border: 1px solid var(--button-hover);
+	background-color: var(--button-hover);
+	color: var(--white);
+	text-decoration: none;
+}
+.nav_bar_panel {
+	background-color: var(--white);
+}
+.nav_bar_panel ul {
+	border-bottom: 1px solid #c6c6c6;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.nav_bar_panel li {
+	border: 1px solid transparent;
+	border-bottom: 0;
+	display: inline-block;
+	padding: 8px 16px;
+	position: relative;
+	top: 1px;
+	font-size: 14px;
+}
+.nav_bar_panel li.activo {
+	background-color: var(--white);
+	border-color: #e7e7e8;
+}
+.nav_bar_panel li.activo a {
+	color: var(--primary-color);
+}
+.crear_cuenta_tab a {
+	color: var(--button-bg);
+}
+#emailField {
+	display: none;
+}
