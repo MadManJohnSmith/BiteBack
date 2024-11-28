@@ -1,3 +1,4 @@
+/*General, header y footer*/
 @import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 :root {
@@ -16,6 +17,7 @@
 	--font-family-default: "Poppins", sans-serif;
 	--font-family-logo: "Press Start 2P", system-ui;
 }
+/*Header*/
 .logo {
 	font-size: 1.3rem;
 	font-weight: 400;
@@ -86,6 +88,7 @@ body {
 	color: var(--white);
 	background-color: var(--primary-color);
 }
+/*Footer*/
 footer .section_container {
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -114,6 +117,7 @@ footer .section_container {
 	margin: 0 auto 1.5rem;
 	padding: 2rem 1rem;
 }
+/*Login*/
 .center {
 	display: flex;
 	justify-content: center;
@@ -203,3 +207,17 @@ footer .section_container {
 #emailField {
 	display: none;
 }
+/*Productos*/
+.row {
+    display: flex;
+}
+.col-md-5, .col-md-7 {
+    width: 50%;
+    box-sizing: border-box;
+	padding: 2rem;
+}
+/*dashboard*/
+
+
+/*index*/
+
