@@ -25,7 +25,7 @@
 <!--End of Tawk.to Script-->
 
 <body>
-    <header>
+    <header id="navbar">
         <nav>
             <div class="nav_bar">
                 <div class="nav_logo">
@@ -49,11 +49,11 @@
         </nav>
     </header>
 
-    <section>
+    <section class="first-section">
         <div class="container">
             <div class="row p-4">
                 <div class="col-md-5">
-                    <div class="panel_body content product-form">
+                    <div class="panel_body product-form">
                         <div class="panel_header product-form">
                             <h2>Agregar Producto</h2>
                         </div>
@@ -64,8 +64,8 @@
                                 <div class="form-group">
                                     <legend>Datos del Producto</legend>
                                     <ul>
-                                        <li class="input_box product-form"><label>Nombre:</label> <input type="text" name="nombre"
-                                                id="form-name" class="form_input"
+                                        <li class="input_box product-form"><label>Nombre:</label> <input type="text"
+                                                name="nombre" id="form-name" class="form_input"
                                                 oninput="validarNombre('form-name', 'error-nombre', 100)"></li>
                                         <p class="error" id="error-nombre" hidden></p>
                                         <li class="input_box"><label>Marca: </label>
@@ -78,8 +78,8 @@
                                             </select>
                                         </li>
                                         <p class="error" id="error-marca" hidden></p>
-                                        <li class="input_box product-form"><label>Modelo:</label> <input type="text" name="modelo"
-                                                id="form-model" class="form_input"
+                                        <li class="input_box product-form"><label>Modelo:</label> <input type="text"
+                                                name="modelo" id="form-model" class="form_input"
                                                 oninput="validarModelo('form-model', 'error-modelo', 25)"></li>
                                         <p class="error" id="error-modelo" hidden></p>
                                         <li class="input_box product-form"><label>Precio: $</label> <input type="number"
@@ -111,8 +111,8 @@
 
                 <!-- TABLA  -->
                 <div class="col-md-7">
-                    <div>
-                        <div>
+                    <div class="panel_body product-table">
+                        <div class="panel_header product-table">
                             <h2>Lista de Productos</h2>
                         </div>
                         <div>
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
 
-                            <table>
+                            <table class="product_table">
                                 <thead>
                                     <tr>
                                         <td>Id</td>
@@ -139,8 +139,8 @@
             </div>
         </div>
     </section>
-    <section>
-
+    <section class="last-section">
+        <div></div>
     </section>
 
     <footer>
@@ -169,5 +169,17 @@
         </section>
     </footer>
 </body>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
 
 </html>
