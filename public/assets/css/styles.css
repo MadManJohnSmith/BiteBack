@@ -1,4 +1,4 @@
-/*General, header y footer*/
+/*General*/
 @import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 :root {
@@ -210,11 +210,33 @@ footer .section_container {
 /*Productos*/
 .row {
     display: flex;
+	
 }
 .col-md-5, .col-md-7 {
     width: 50%;
     box-sizing: border-box;
 	padding: 2rem;
+	display: flex;
+	
+}
+li {
+	list-style: none;
+}
+.form-group li{
+	color: var(--primary-color);
+	font-weight: bold;
+	font-family: var(--font-family-default);
+}
+.panel_header.product-form{
+	border-radius: 0rem;
+}
+.panel_body.product-form{
+	border-radius: 0.25rem;
+	border-top-left-radius: 1.25rem;
+	border-bottom-left-radius: 1.25rem;
+}
+.input_box.product-form {
+	margin: 5px 0;
 }
 /*dashboard*/
 

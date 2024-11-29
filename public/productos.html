@@ -53,8 +53,8 @@
         <div class="container">
             <div class="row p-4">
                 <div class="col-md-5">
-                    <div>
-                        <div>
+                    <div class="panel_body content product-form">
+                        <div class="panel_header product-form">
                             <h2>Agregar Producto</h2>
                         </div>
                         <div>
@@ -62,44 +62,43 @@
                             <form id="product-form">
                                 <input type="hidden" id="productId">
                                 <div class="form-group">
-                                    <!--  -->
-                                    <fieldset>
-                                        <legend>Datos del Producto</legend>
-                                        <ul>
-                                            <li><label>Nombre:</label> <input type="text" name="nombre" id="form-name"
-                                                    oninput="validarNombre('form-name', 'error-nombre', 100)"></li>
-                                            <p class="error" id="error-nombre" hidden></p>
-                                            <li><label>Marca: </label>
-                                                <select name="marca" id="marca1">
-                                                    <option value="Def">Seleccione:</option>
-                                                    <option value="CISCO">CISCO</option>
-                                                    <option value="LINKSYS">LINKSYS</option>
-                                                    <option value="TP_LINK">TP_LINK</option>
-                                                    <option value="ASUS">ASUS</option>
-                                                </select>
-                                            </li>
-                                            <p class="error" id="error-marca" hidden></p>
-                                            <li><label>Modelo:</label> <input type="text" name="modelo" id="form-model"
-                                                    oninput="validarModelo('form-model', 'error-modelo', 25)"></li>
-                                            <p class="error" id="error-modelo" hidden></p>
-                                            <li><label>Precio: $</label> <input type="number" name="precio"
-                                                    id="form-price"
-                                                    oninput="validarPrecio('form-price', 'error-precio', 99.99)"></li>
-                                            <p class="error" id="error-precio" hidden></p>
-                                            <li><label>Detalles:</label> <input type="text" name="detalles"
-                                                    id="form-details"
-                                                    onchange="largo('form-details', 'error-detalles', 250)"></li>
-                                            <p class="error" id="error-detalles" hidden></p>
-                                            <li><label>Unidades:</label> <input type="number" name="unidades"
-                                                    id="form-units"
-                                                    oninput="validarUnidades('form-units', 'error-unidades', 0)"></li>
-                                            <p class="error" id="error-unidades" hidden></p>
-                                            <li><label>Imagen:</label> <input type="file" name="imagen" id="form-img"
-                                                    accept="image/png, image/jpeg"></li>
-                                            <input type="hidden" name="imagen_predeterminada" id="imagen_predeterminada"
-                                                value="img/default.jpeg">
-                                        </ul>
-                                    </fieldset>
+                                    <legend>Datos del Producto</legend>
+                                    <ul>
+                                        <li class="input_box product-form"><label>Nombre:</label> <input type="text" name="nombre"
+                                                id="form-name" class="form_input"
+                                                oninput="validarNombre('form-name', 'error-nombre', 100)"></li>
+                                        <p class="error" id="error-nombre" hidden></p>
+                                        <li class="input_box"><label>Marca: </label>
+                                            <select name="marca" id="marca1">
+                                                <option value="Def">Seleccione:</option>
+                                                <option value="CISCO">CISCO</option>
+                                                <option value="LINKSYS">LINKSYS</option>
+                                                <option value="TP_LINK">TP_LINK</option>
+                                                <option value="ASUS">ASUS</option>
+                                            </select>
+                                        </li>
+                                        <p class="error" id="error-marca" hidden></p>
+                                        <li class="input_box product-form"><label>Modelo:</label> <input type="text" name="modelo"
+                                                id="form-model" class="form_input"
+                                                oninput="validarModelo('form-model', 'error-modelo', 25)"></li>
+                                        <p class="error" id="error-modelo" hidden></p>
+                                        <li class="input_box product-form"><label>Precio: $</label> <input type="number"
+                                                name="precio" class="form_input" id="form-price"
+                                                oninput="validarPrecio('form-price', 'error-precio', 99.99)"></li>
+                                        <p class="error" id="error-precio" hidden></p>
+                                        <li class="input_box product-form"><label>Detalles:</label> <input type="text"
+                                                name="detalles" class="form_input" id="form-details"
+                                                onchange="largo('form-details', 'error-detalles', 250)"></li>
+                                        <p class="error" id="error-detalles" hidden></p>
+                                        <li class="input_box product-form"><label>Unidades:</label> <input type="number"
+                                                name="unidades" class="form_input" id="form-units"
+                                                oninput="validarUnidades('form-units', 'error-unidades', 0)"></li>
+                                        <p class="error" id="error-unidades" hidden></p>
+                                        <li><label>Imagen:</label> <input type="file" name="imagen" id="form-img"
+                                                accept="image/png, image/jpeg"></li>
+                                        <input type="hidden" name="imagen_predeterminada" id="imagen_predeterminada"
+                                            value="img/default.jpeg">
+                                    </ul>
                                     <!-- -->
                                 </div>
                                 <button class="button" type="submit">
